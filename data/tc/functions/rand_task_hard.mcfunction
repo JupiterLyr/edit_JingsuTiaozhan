@@ -1,0 +1,24 @@
+execute if score countdown command matches 155 run function tc:random10
+
+execute if score random command matches 22 run function tc:new_tast/12
+execute if score random command matches 1 run function tc:tast/62
+execute if score random command matches 2 run function tc:tast/63
+execute if score random command matches 3 run function tc:tast/64
+execute if score random command matches 4 run function tc:tast/65
+execute if score random command matches 5 run function tc:tast/66
+execute if score random command matches 6 run function tc:tast/67
+execute if score random command matches 7 run function tc:tast/68
+execute if score random command matches 8 run function tc:tast/69
+execute if score random command matches 9 run function tc:tast/70
+execute if score random command matches 10 run function tc:tast/61
+execute if score random command matches 11 run function tc:new_tast/1
+execute if score random command matches 12 run function tc:new_tast/2
+execute if score random command matches 13 run function tc:new_tast/3
+execute if score random command matches 14 run function tc:new_tast/4
+execute if score random command matches 15 run function tc:new_tast/5
+execute if score random command matches 16 run function tc:new_tast/6
+execute if score random command matches 17 run function tc:new_tast/7
+execute if score random command matches 18 run function tc:new_tast/8
+execute if score random command matches 19 run function tc:new_tast/9
+execute if score random command matches 20 run function tc:new_tast/10
+execute if score random command matches 21 run function tc:new_tast/11
