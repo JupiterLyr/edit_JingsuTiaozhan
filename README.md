@@ -16,7 +16,7 @@
 + 文件 `pack.mcmeta` 是包描述文件，更新时建议同步修改其内版本号。
 + 文件夹 `functions` 下的 `*.mcfuntion` 文件都是游戏内容的配置文件，其内的 `tast` 和 `new_tast` 中存放了可能随机到的任务。修改任务时，要同时修改 `getscore.mcfunction` 和 `load.mcfunction` 中的计分板名称及游戏检测事件。
 + 文件夹 `functions` 下的 `rand_task_easy.mcfunction`、 `rand_task_normal.mcfunction`、 `rand_task_hard.mcfunction` 文件，分别设定了简单、普通、困难难度下的随机数与随机任务的映射关系。
-+ 文件夹 `loot_tables` 中的 `*.json` 文件设定了不同随机方式的随机数上下限。注意，
++ 文件夹 `loot_tables` 中的 `*.json` 文件设定了不同随机方式的随机数上下限。注意，随机数上下限应与映射的涵盖范围一致！
 </br>
 
 ## 更新日志
@@ -44,3 +44,6 @@
 + 修改了上述任务对应的 `load.mcfunction` 的计分板设置栏目，其内容在 `#task's scoreboard` 下方。
 + 将 `loot_tables` 文件夹中 `random40.json` 文件的随机数最大取值调整为 `64`，扩增了“普通”难度的随机数取值范围，并在 `rand_task_normal.mcfunction` 中调整了随机数到任务的映射关系。
 + 将游戏设置 `settings.mcfunction` 中 `DayLight command matches 2` 的指令调整为从早晨开始而非正午。
+
+### Version 1.1.3</br>2025-07-02 21:45
++ 修复了计分板最后一行不正常显示的Bug，以个别不正确的配置。
