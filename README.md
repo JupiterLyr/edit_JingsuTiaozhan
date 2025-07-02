@@ -45,5 +45,5 @@
 + 将 `loot_tables` 文件夹中 `random40.json` 文件的随机数最大取值调整为 `64`，扩增了“普通”难度的随机数取值范围，并在 `rand_task_normal.mcfunction` 中调整了随机数到任务的映射关系。
 + 将游戏设置 `settings.mcfunction` 中 `DayLight command matches 2` 的指令调整为从早晨开始而非正午。
 
-### Version 1.1.3</br>2025-07-02 21:45
-+ 修复了计分板最后一行不正常显示的Bug，以个别不正确的配置。
+### Version 1.1.3</br>2025-07-02 22:00
++ 修复了计分板不正常显示的Bug，以及个别不正确的配置。
