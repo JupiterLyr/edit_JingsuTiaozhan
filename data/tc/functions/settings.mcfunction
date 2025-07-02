@@ -27,7 +27,7 @@ execute if score GlowOrNot command matches 1 run effect give @a glowing 1 0 true
 #DayLight
 execute if score DayLight command matches 1 run time set noon
 execute if score DayLight command matches 1 run gamerule doDaylightCycle false
-execute if score DayLight command matches 2 run time set noon
+execute if score DayLight command matches 2 run time set day
 execute if score DayLight command matches 2 run gamerule doDaylightCycle true
 execute if score DayLight command matches 3 run time set midnight
 execute if score DayLight command matches 3 run gamerule doDaylightCycle false
