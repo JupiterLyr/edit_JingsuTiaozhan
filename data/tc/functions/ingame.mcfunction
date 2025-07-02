@@ -20,19 +20,23 @@ execute if score countdown command matches 150.. run scoreboard players remove t
 execute if score countdown command matches 150.. run execute store result bossbar timelimit value run scoreboard players get timeup command
 
 #tasks
-execute if score countdown command matches 150 run function tc:random_task_difficulty
+execute if score countdown command matches 150.. if score difficulty command matches 1 run function tc:rand_task_easy
+execute if score countdown command matches 150.. if score difficulty command matches 2 run function tc:rand_task_normal
+execute if score countdown command matches 150.. if score difficulty command matches 3 run function tc:rand_task_hard
 
-execute if score countdown command matches 150.. if score rounds command matches 1..10 if score random_task command matches 1..6 run function tc:rand_task_easy
-execute if score countdown command matches 150.. if score rounds command matches 1..10 if score random_task command matches 7..9 run function tc:rand_task_normal
-execute if score countdown command matches 150.. if score rounds command matches 1..10 if score random_task command matches 10.. run function tc:rand_task_hard
+# execute if score countdown command matches 150 run function tc:random_task_difficulty
 
-execute if score countdown command matches 150.. if score rounds command matches 11..20 if score random_task command matches 1..4 run function tc:rand_task_easy
-execute if score countdown command matches 150.. if score rounds command matches 11..20 if score random_task command matches 5..9 run function tc:rand_task_normal
-execute if score countdown command matches 150.. if score rounds command matches 11..20 if score random_task command matches 10.. run function tc:rand_task_hard
+# execute if score countdown command matches 150.. if score rounds command matches 1..10 if score random_task command matches 1..6 run function tc:rand_task_easy
+# execute if score countdown command matches 150.. if score rounds command matches 1..10 if score random_task command matches 7..9 run function tc:rand_task_normal
+# execute if score countdown command matches 150.. if score rounds command matches 1..10 if score random_task command matches 10.. run function tc:rand_task_hard
 
-execute if score countdown command matches 150.. if score rounds command matches 21.. if score random_task command matches 1..2 run function tc:rand_task_easy
-execute if score countdown command matches 150.. if score rounds command matches 21.. if score random_task command matches 3..6 run function tc:rand_task_normal
-execute if score countdown command matches 150.. if score rounds command matches 21.. if score random_task command matches 7.. run function tc:rand_task_hard
+# execute if score countdown command matches 150.. if score rounds command matches 11..20 if score random_task command matches 1..4 run function tc:rand_task_easy
+# execute if score countdown command matches 150.. if score rounds command matches 11..20 if score random_task command matches 5..9 run function tc:rand_task_normal
+# execute if score countdown command matches 150.. if score rounds command matches 11..20 if score random_task command matches 10.. run function tc:rand_task_hard
+
+# execute if score countdown command matches 150.. if score rounds command matches 21.. if score random_task command matches 1..2 run function tc:rand_task_easy
+# execute if score countdown command matches 150.. if score rounds command matches 21.. if score random_task command matches 3..6 run function tc:rand_task_normal
+# execute if score countdown command matches 150.. if score rounds command matches 21.. if score random_task command matches 7.. run function tc:rand_task_hard
 
 #timeup
 execute if score timeup command matches 0 run title @a subtitle {"text": "§7没有人完成挑战"}

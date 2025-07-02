@@ -34,16 +34,19 @@
 | 文件 | 原任务 | 修改任务 | 难度 |
 | :---: | :---: | :---: | :---: |
 | `tast/27.mcfunction` | 制作一把弩 | 制作一把弓 | **↓** |
-| `tast/28.mcfunction` | 制作一个遮光玻璃 | 制作一个红石火把 | **↓↓↓** |
-| `tast/29.mcfunction` | 制作一个望远镜 | 制作一个火把 | **↓↓↓** |
+| `tast/28.mcfunction` | 制作一个遮光玻璃 | 制作红石火把 | **↓↓↓** |
+| `tast/29.mcfunction` | 制作一个望远镜 | 制作火把 | **↓↓↓** |
 | `tast/38.mcfunction` | 制作一个皮革马铠 | 制作一块萤石 | **↑↑** |
 | `tast/62.mcfunction` | 丢掉一把三叉戟 | 丢掉一把金稿 | **↓↓** |
-| `tast/64.mcfunction` | 制作一个阳光感测器 | 制作一个白桦木台阶 | **↓↓↓** |
+| `tast/64.mcfunction` | 制作一个阳光感测器 | 制作白桦木台阶 | **↓↓↓** |
 
 + 修改了上述任务对应的 `getscore.mcfunction` 的任务重置栏目。
 + 修改了上述任务对应的 `load.mcfunction` 的计分板设置栏目，其内容在 `#task's scoreboard` 下方。
 + 将 `loot_tables` 文件夹中 `random40.json` 文件的随机数最大取值调整为 `64`，扩增了“普通”难度的随机数取值范围，并在 `rand_task_normal.mcfunction` 中调整了随机数到任务的映射关系。
 + 将游戏设置 `settings.mcfunction` 中 `DayLight command matches 2` 的指令调整为从早晨开始而非正午。
 
-### Version 1.1.3</br>2025-07-02 22:00
-+ 修复了计分板不正常显示的Bug，以及个别不正确的配置。
+### Version 1.1.5</br>2025-07-02 23:30
+**累积更新 V1.1.3 ~ V1.1.5**
++ 修复了计分板不正常显示的Bug，以及个别不正确的函数配置。
++ 重写了 `ingame.mcfunction` 的 `#tasks` 处的新任务获取方式，规范了三种难度等级的随机任务生成方法。
++ 修复了个别任务完成的判定机制（识别个数等）。

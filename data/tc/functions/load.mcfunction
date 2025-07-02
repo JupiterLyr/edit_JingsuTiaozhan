@@ -21,9 +21,9 @@ scoreboard players set 40 command 40
 scoreboard objectives add lobby dummy
 scoreboard objectives setdisplay sidebar lobby
 scoreboard players set 玩家列表: lobby 2
-scoreboard players set 原作者：DGL lobby 0
-scoreboard players set 翻译二改作者：Y_ALANG lobby 0
-scoreboard players set 三改作者：JupiterLyr lobby 0
+# scoreboard players set 原作者：DGL lobby 0
+# scoreboard players set 翻译二改作者：Y_ALANG lobby 0
+# scoreboard players set 三改作者：JupiterLyr lobby 0
 
 scoreboard objectives add whilegame dummy
 
