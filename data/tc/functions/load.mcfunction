@@ -2,7 +2,7 @@ title @a subtitle {"text": "感谢您的下载","color": "gold"}
 title @a title {"text": "已侦测到竞速挑战赛数据包","color": "red"}
 tellraw @a {"text": "Loaded 竞速挑战赛 by DragonL (R - 1.0.3)"}
 tellraw @a {"text": "Loaded 重新翻译 & 二改 by Y_ALANG (R - 1.0.6)"}
-tellraw @a {"text": "Loaded 三改 & 优化 by JupiterLyr (R - 1.1.2)"}
+tellraw @a {"text": "Loaded 三改 & 优化 by JupiterLyr (R - 1.1.2+)"}
 execute as @a at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1
 execute as @a[tag=admin,gamemode=!creative] run function tc:inventory_ui
 execute as @a run attribute @s generic.max_health base set 20
