@@ -3,7 +3,7 @@ execute if score countdown command matches 160 run scoreboard players reset * cr
 
 #編寫該挑戰出現時應該要顯示的訊息
 execute if score countdown command matches 160 run title @a subtitle {"text": "第一个完成挑战的玩家获得分数","color": "gray"}
-execute if score countdown command matches 160 run title @a title {"text": "制作一个阳光感测器"}
+execute if score countdown command matches 160 run title @a title {"text": "制作一个白桦木台阶"}
 
 #編寫該挑戰出現時應該撥放的音效
 execute if score countdown command matches 160 as @a at @s run playsound entity.player.levelup master @s ~ ~ ~ 1

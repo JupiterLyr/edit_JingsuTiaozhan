@@ -12,4 +12,4 @@ execute if score countdown command matches 160 as @a at @s run playsound entity.
 execute if score countdown command matches 160.. run title @a actionbar {"text": "§a目前挑战 §f丢掉一块木炭"}
 
 #偵測這個玩家執行了條件式，並讓該玩家在該位置執行 function tc:getscore
-execute if score countdown command matches 160.. as @a[scores={drop_charcoal=1}] at @s run function tc:getscore
+execute if score countdown command matches 160.. as @a[scores={drop_charcoal=1..}] at @s run function tc:getscore

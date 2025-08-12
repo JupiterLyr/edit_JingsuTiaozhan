@@ -1,9 +1,8 @@
 scoreboard players add timer command 1
 execute if score timer command matches 260 run scoreboard players reset * lobby
 execute if score timer command matches 260 run scoreboard players set 玩家列表: lobby 2
-execute if score timer command matches 260 run scoreboard players set 原作者：DGL lobby 0
-execute if score timer command matches 260 run scoreboard players set 翻译&二改：Y_ALANG lobby 0
-execute if score timer command matches 260 run scoreboard players set 三改：JupiterLyr lobby 0
+execute if score timer command matches 260 run scoreboard players set 原作者：DGL lobby -1
+execute if score timer command matches 260 run scoreboard players set 修改：JupiterLyr lobby -1
 execute if score timer command matches 260 run scoreboard players reset timer command
 
 execute if score timer command matches 1 run bossbar set lobby name {"text": "§e§l您正在游玩 竞速挑战赛"}
